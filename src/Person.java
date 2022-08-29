@@ -1,4 +1,4 @@
-public class Person implements Comparable<Person> {
+public class Person {
     private String name;
     private String surname;
     private int age;
@@ -37,9 +37,6 @@ public class Person implements Comparable<Person> {
     public String toString() {
         return surname + " " + name + " " + age;
     }
-
-    @Override
-    public int compareTo(Person o) {
-        return 0;
-    }
 }
+
+
