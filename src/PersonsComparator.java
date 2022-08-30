@@ -12,7 +12,9 @@ public class PersonsComparator implements Comparator<Person> {
         String[] s;
         String[] s2;
         s = o1.getSurname().split("-");
+        s = o1.getSurname().split(" ");
         s2 = o2.getSurname().split("-");
+        s2 = o2.getSurname().split(" ");
         if (s.length >= numberOfSurname && s2.length >= numberOfSurname) {
             return Integer.compare(o2.getAge(), o1.getAge());
         } else if (s.length < s2.length) {
